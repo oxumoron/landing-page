@@ -153,6 +153,210 @@ textarea {
 .col-12 {
 	width: 100%;
 }
+
+@media (max-width: 1200px) {
+	.col-lg-1 {
+		width: 8.33333333%;
+	}
+	
+	.col-lg-2 {
+		width: 16.666666667%;
+	}
+	
+	.col-lg-3 {
+		width: 25%;
+	}
+	
+	.col-lg-4 {
+		width: 33.33333333%;
+	}
+	
+	.col-lg-5 {
+		width: 41.666666667%;
+	}
+	
+	.col-lg-6 {
+		width: 50%;
+	}
+	
+	.col-lg-7 {
+		width: 58.33333333%;
+	}
+	
+	.col-lg-8 {
+		width: 66.666666667%;
+	}
+	
+	.col-lg-9 {
+		width: 75%;
+	}
+	
+	.col-lg-10 {
+		width: 83.33333333%;
+	}
+	
+	.col-lg-11 {
+		width: 91.666666667%;
+	}
+	
+	.col-lg-12 {
+		width: 100%;
+	}
+}
+
+@media (max-width: 991px) {
+	.col-md-1 {
+		width: 8.33333333%;
+	}
+	
+	.col-md-2 {
+		width: 16.666666667%;
+	}
+	
+	.col-md-3 {
+		width: 25%;
+	}
+	
+	.col-md-4 {
+		width: 33.33333333%;
+	}
+	
+	.col-md-5 {
+		width: 41.666666667%;
+	}
+	
+	.col-md-6 {
+		width: 50%;
+	}
+	
+	.col-md-7 {
+		width: 58.33333333%;
+	}
+	
+	.col-md-8 {
+		width: 66.666666667%;
+	}
+	
+	.col-md-9 {
+		width: 75%;
+	}
+	
+	.col-md-10 {
+		width: 83.33333333%;
+	}
+	
+	.col-md-11 {
+		width: 91.666666667%;
+	}
+	
+	.col-md-12 {
+		width: 100%;
+	}
+
+	.d-none-md {
+		display: none;
+	}
+}
+
+@media (max-width: 767px) {
+	.col-sd-1 {
+		width: 8.33333333%;
+	}
+	
+	.col-sd-2 {
+		width: 16.666666667%;
+	}
+	
+	.col-sd-3 {
+		width: 25%;
+	}
+	
+	.col-sd-4 {
+		width: 33.33333333%;
+	}
+	
+	.col-sd-5 {
+		width: 41.666666667%;
+	}
+	
+	.col-sd-6 {
+		width: 50%;
+	}
+	
+	.col-sd-7 {
+		width: 58.33333333%;
+	}
+	
+	.col-sd-8 {
+		width: 66.666666667%;
+	}
+	
+	.col-sd-9 {
+		width: 75%;
+	}
+	
+	.col-sd-10 {
+		width: 83.33333333%;
+	}
+	
+	.col-sd-11 {
+		width: 91.666666667%;
+	}
+	
+	.col-sd-12 {
+		width: 100%;
+	}
+}
+
+@media (max-width: 576px) {
+	.col-xs-1 {
+		width: 8.33333333%;
+	}
+	
+	.col-xs-2 {
+		width: 16.666666667%;
+	}
+	
+	.col-xs-3 {
+		width: 25%;
+	}
+	
+	.col-xs-4 {
+		width: 33.33333333%;
+	}
+	
+	.col-xs-5 {
+		width: 41.666666667%;
+	}
+	
+	.col-xs-6 {
+		width: 50%;
+	}
+	
+	.col-xs-7 {
+		width: 58.33333333%;
+	}
+	
+	.col-xs-8 {
+		width: 66.666666667%;
+	}
+	
+	.col-xs-9 {
+		width: 75%;
+	}
+	
+	.col-xs-10 {
+		width: 83.33333333%;
+	}
+	
+	.col-xs-11 {
+		width: 91.666666667%;
+	}
+	
+	.col-xs-12 {
+		width: 100%;
+	}
+}
 /* Grid layout end*/
 
 /* Default classes start */
@@ -245,7 +449,7 @@ textarea {
 	margin-bottom: 75px;
 }
 
-.title.title-small {
+.title-small {
 	font-size: 0.86rem;
 }
 
@@ -297,6 +501,22 @@ textarea {
 	color: #111;
 }
 
+.row blockquote p {
+	font-family: 'open_sanslight',sans-serif;
+	font-size: 1.6rem;
+	line-height: 2.53rem;
+	color: #777;
+}
+
+.row blockquote span {
+	font-family: 'open_sansregular',sans-serif;
+	font-size: .73rem;
+	line-height: 2.53rem;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	color: #777;
+}
+
 .form-control {
 	width: 100%;
 	border: 1px solid #e5e5e5;
@@ -315,6 +535,12 @@ textarea.form-control {
 	min-height: 90px;
 	padding-top: 10px;
 }
+
+@media (max-width: 576px) {
+	.default-section {
+		padding: 30px 0;
+	}
+}
 /* Default component end */
 
 /* Custom style start */
@@ -326,7 +552,6 @@ textarea.form-control {
 	left: 0;
 	right: 0;
 	background-color: rgba(254, 254, 254, 0);
-	overflow: hidden;
 	padding: 20px 0;
 	z-index: 999;
 }
@@ -357,6 +582,20 @@ textarea.form-control {
 #header .header-nav li + li {
 	margin-left: 35px;
 }
+
+@media (max-width: 991px) {
+	#header .header-nav {
+		display: none;
+	}
+
+	.slicknav_menu {
+		display: block;
+	}
+
+	.logo {
+		padding-top: 13px;
+	}
+}
 /*===== Header end ======*/
 
 /*===== Inner start ======*/
@@ -379,16 +618,10 @@ textarea.form-control {
 
 .inner-content {
 	display: inline-block;
-	/* max-width: 850px; */
 	vertical-align: middle;
-	/* position: absolute; */
-	/* top: 50%; */
-	/* left: 50%; */
-	/* transform: translate(-50%, -50%); */
 }
 
 .inner-title {
-	/* display: inline-block; */
 	font-family: 'dosisregular',sans-serif;
 	font-weight: normal;
 	letter-spacing: 1.7em;
@@ -403,6 +636,20 @@ textarea.form-control {
 	font-size: 1.27rem;
 	font-family: 'open_sanslight',sans-serif;
 	color: rgba(254, 254, 254, .68);
+}
+
+@media (max-width: 991px) {
+	.inner-title {
+		margin-bottom: 50px;
+		letter-spacing: 0.7em;
+		text-indent: 0.7em;
+	}
+}
+
+@media (max-width: 576px) {
+	.inner-title {
+		text-indent: 0;
+	}
 }
 /*===== Inner end ======*/
 
@@ -431,6 +678,18 @@ textarea.form-control {
 .team-item-role {
 	margin: 1rem;
 	font-size: 0.8rem;
+}
+
+@media (max-width: 991px) {
+	.col > *:first-child {
+		margin-bottom: 30px;
+	}
+}
+
+@media (max-width: 767px) {
+	.team-item-photo {
+		text-align: center;
+	}
 }
 /*===== About studio end ======*/
 
@@ -470,6 +729,30 @@ textarea.form-control {
 	letter-spacing: 0.4em;
 	text-transform: uppercase;
 } 
+
+@media (max-width: 991px) {
+	.services-tab ul li a span:last-child {
+		letter-spacing: 0.2em;
+	}
+}
+
+@media (max-width: 767px) {
+
+	.services-tab ul li{
+		width: 33.333%;
+		margin-bottom: 15px;
+	}
+
+	.services-tab ul li a span:last-child {
+		letter-spacing: 0.1em;
+	}
+}
+
+@media (max-width: 576px) {
+	.services-tab ul li{
+		width: 50%;
+	}
+}
 /*===== Services end ======*/
 
 /*===== Lets talk start ======*/
@@ -492,7 +775,7 @@ textarea.form-control {
 	padding-bottom: 0;
 }
 
-/* Убираем обтикание */
+/* Убираем обтекание */
 .portfolio-tabs::after {
 	content: '';
 	clear: both;
@@ -515,14 +798,13 @@ textarea.form-control {
 
 .portfolio-tabs ul{
 	text-align: center;
-	margin-bottom: -15px;
+	margin-bottom: 45px;
 	margin-top: 75px;
 }
 
 .portfolio-tabs ul li{
 	font-family: 'dosisregular', sans-serif;
 	display: inline-block;
-	font-size: 0.8667rem;
 	letter-spacing: 0.4em;
 	text-transform: uppercase;
 	color: rgba(17,17,17, 0.5);
@@ -545,12 +827,36 @@ textarea.form-control {
 }
 
 .portfolio-tabs ul li a span {
-	margin-top: 30px;
 	font-family: 'dosisregular',sans-serif;
 	font-size: 0.93rem;
 	letter-spacing: 0.4em;
 	text-transform: uppercase;
 } 
+
+@media (max-width: 991px) {
+	.portfolio-item {
+		width: 50%;
+	}
+}
+
+@media (max-width: 767px) {
+	.portfolio-item {
+		width: 100%;
+	}
+
+	.portfolio-tabs ul li+ li{
+		margin-left: 0px;
+		margin-top: 20px;
+	}
+
+	.portfolio-item img {
+		width: 100%;
+	}
+
+	.portfolio-tabs ul li {
+		display: block;
+	}
+}
 /*===== Portfolio end ======*/
 
 /*==== Creative works start ====*/
@@ -559,11 +865,11 @@ textarea.form-control {
 }
 
 .creative-works h3 {
-	margin-bottom: 0;
+	margin-bottom: 25px;
 }
 
 .creative-works button {
-	margin-bottom: 70px;
+	margin-top: 0px;
 }
 /*==== Creative works end ====*/
 
@@ -584,6 +890,15 @@ textarea.form-control {
 	letter-spacing: 0.4em;
 	text-transform: uppercase;
 	margin: 35px;
+}
+
+@media (max-width: 991px) {
+	.advantage-icon {
+		margin-top: 30px;
+	}
+	.why-choose-us .row + .row {
+		margin-top: 0;
+	}
 }
 /*===== Why choose us end ======*/
 
@@ -667,6 +982,25 @@ textarea.form-control {
 	display: inline-block;
 	padding-top: 30px;
 }
+
+@media (max-width: 991px) {
+	.review-wrapper {
+		max-width: 550px;
+	}
+}
+
+@media (max-width: 767px) {
+	.review-wrapper {
+		max-width: 355px;
+	}
+}
+
+@media (max-width: 576px) {
+	.review-wrapper p {
+		font-size: 0.7rem;
+		padding-top: 40px;
+	}
+}
 /*===== Review end ======*/
 
 /*===== Latest news start ======*/
@@ -729,11 +1063,32 @@ textarea.form-control {
 	width: 120px;
 	height: 26px;
 }
+
+@media (max-width: 991px) {
+	.latest-news-item {
+		padding-top: 30px;
+		margin-bottom: 30px;
+	}
+
+	.latest-news .row .col + .col .latest-news-item {
+		border-top: 2px solid black;
+	}
+
+	.latest-news img {
+		width: 100%;
+	}
+}
+
+@media (max-width: 576px) {
+	.latest-news .container a{
+		top: 50px;
+	}
+}
 /*===== Latest news end ======*/
 
 /*===== Newsletter start ======*/
 .newsletter-title {
-	font-family: 'dosislight', sans-serif;
+	font-family: 'dosisextralight', sans-serif;
 	font-size: 1.0667rem;
 	line-height: 1.625rem;
 	letter-spacing: 0.3em;
@@ -751,17 +1106,10 @@ textarea.form-control {
 .newsletter-form .form-info{
 	margin-top: 12px;
 }
-/* .form-newsletter::before {
-	content: '';
-	display: inline-block;
-	height: 100%;
-	vertical-align: middle;
-} */
 
 .form-newsletter input {
 	max-width: 290px;
 }
-
 
 /*===== Newsletter end ======*/
 
@@ -821,6 +1169,12 @@ textarea.form-control {
 
 .form-submit button {
 	float: right;
+}
+
+@media (max-width: 576px) {
+	.contact-item {
+		text-align: center;
+	}
 }
 /*===== Contacts end ======*/
 
@@ -947,9 +1301,15 @@ textarea.form-control {
 }
 /*===== Footer end ======*/
 
-
-
 /* Custom style end */
+
+/* Media */
+/* 
+	large-devices - < 1200px ноутбуки и очень большие планшеты
+	medium-devices - < 991 px планшеты 7 альб,7>порт, моб тел альбом
+	small-devices - < 767 px планшет 7 порт, планш альбом, моб тел альбом
+	extra-small-devices - 320 < 576px моб тел
+*/
 
 
 
