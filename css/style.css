@@ -471,10 +471,15 @@ textarea {
 	font-family: 'open_sansregular',sans-serif;
 	cursor: pointer;
 	border-radius: 2px;
+	border: 1px solid transparent;
+	transition: border .2s ease-in, background-color .2s ease-in .5s;
 }
 
 .btn:hover {
 	background-color: burlywood;
+	color: #fff;
+	border: 1px solid #fff;
+	background: linear-gradient(to right,rgb(0, 0, 0) 20%,rgb(200, 100, 100) 70%);
 }
 
 .btn-default {
@@ -638,6 +643,30 @@ textarea.form-control {
 	color: rgba(254, 254, 254, .68);
 }
 
+.inner-button {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+    transform: rotate(-45deg);
+    bottom: 5%;
+    left: 50%;
+    cursor: pointer;
+}
+
+.inner-button:hover {
+	background-color: red;
+}
+
+.inner-button .fas {
+    position: absolute;
+    bottom: 2px;
+    left: 4px;
+    transform: rotate(45deg);
+    font-size: 0.6667rem;
+}
+
 @media (max-width: 991px) {
 	.inner-title {
 		margin-bottom: 50px;
@@ -663,8 +692,87 @@ textarea.form-control {
 }
 
 .team-item-photo {
-	/* margin-top: 30px; */
 	margin-bottom: 30px;
+	/* for skill */
+	height: 450px;
+	position: relative;
+	perspective: 2000px;
+}
+	/* for skill */
+.team-item-skill {
+	background-color: #000;
+	transform: rotateY(180deg);
+}
+	/* for skill */
+.container-for-flip {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	backface-visibility: hidden;
+	transition: all .8s ease;
+}
+	/* for skill */
+.team-item-photo:hover .team-item-front {
+	transform: rotateY(180deg);
+}
+	/* for skill */
+.team-item-photo:hover .team-item-skill {
+	transform: rotateY(360deg);
+}
+
+.container-skill {
+	padding: 40px;
+}
+
+.team-item-skill h3 {
+	font-family: 'dosisregular',sans-serif;
+	font-size: 1.2em;
+	line-height: 2.56rem;
+	letter-spacing: 0.3em;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.team-item-skill p {
+	font-family: 'open_sansregular',sans-serif;
+	font-size: 0.83rem;
+	line-height: 1.4rem;
+	color: rgba(255, 255, 255, .5);
+}
+
+.container-skill ul {
+	padding-top: 45px;
+}
+
+.container-skill ul li + li {
+	padding-top: 20px;
+}
+
+.progress-bar {
+	border: 1px solid white;
+	height: 12px;
+	width: 100%;
+	position: relative;
+}
+
+.skill-name {
+	font-family: 'open_sansregular',sans-serif;
+	font-size: 0.73rem;
+	/* line-height: 2.56rem; */
+	letter-spacing: 0.2em;
+	color: rgba(255, 255, 255, .9);
+	text-transform: uppercase;
+	margin-bottom: 5px;
+}
+
+.progress-bar .progress {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	background-color: #fff;
 }
 
 .team-item-info {
@@ -1349,5 +1457,36 @@ textarea.form-control {
 	extra-small-devices - 320 < 576px моб тел
 */
 
+.animate-opacity {
+	opacity: 0;
+	animation: opacity .5s ease-in forwards;
+}
 
+.animate-scale {
+	transform: scale(0);
+	animation: scale .5s ease-in 1s forwards;
+}
 
+@keyframes opacity {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes scale {
+	0% {
+		transform:scale(0)
+	}
+	
+	50% {
+		transform:scale(1.1)
+	}
+
+	100% {
+		transform:scale(1)
+	}
+}
