@@ -655,10 +655,6 @@ textarea.form-control {
     cursor: pointer;
 }
 
-.inner-button:hover {
-	background-color: red;
-}
-
 .inner-button .fas {
     position: absolute;
     bottom: 2px;
@@ -1433,7 +1429,7 @@ textarea.form-control {
 	margin-bottom: 33px;
 }
 
-.go-home {
+/* .go-home {
 	cursor: pointer;
 	position: absolute;
 	bottom: 0;
@@ -1444,6 +1440,21 @@ textarea.form-control {
 
 .go-home:hover {
 	color: black;
+} */
+
+.toTop {
+    cursor: pointer;
+	position: absolute;
+	bottom: 0;
+	right: 0.8%;
+	font-size: 3.2rem;
+	color: #c6c6c6;
+	position: fixed;
+	display: none;
+    }
+ 
+.toTop:hover {
+    color: black;
 }
 /*===== Footer end ======*/
 
