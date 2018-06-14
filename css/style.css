@@ -476,7 +476,6 @@ textarea {
 }
 
 .btn:hover {
-	background-color: burlywood;
 	color: #fff;
 	border: 1px solid #fff;
 	background: linear-gradient(to right,rgb(0, 0, 0) 20%,rgb(200, 100, 100) 70%);
@@ -578,10 +577,15 @@ textarea.form-control {
 #header .header-nav li {
 	float: left;
 	line-height: 44px;
+	transition: 0.2s ease-out;
+    padding-bottom: 7px;
+    border-bottom: 0px solid red;
 }
 
 #header .header-nav li:hover {
-	color:red;
+	color: #fff;
+	border-bottom: 1px solid red;
+	padding-bottom: 3px;
 }
 
 #header .header-nav li + li {
